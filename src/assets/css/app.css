@@ -6639,6 +6639,16 @@ button.bg-dark:hover {
 	white-space: nowrap;
 	border: 0;
 }
+.notFoundTitle{
+	color: var(--primary);
+	font-size: 2rem;
+    font-weight: 600;
+}
+.notFoundMsg{
+	color: var(--secondary);
+	font-size: 1rem;
+    font-weight: 400;
+}
 .sr-only-focusable:active,
 .sr-only-focusable:focus {
 	position: static;
@@ -8461,6 +8471,15 @@ button.bg-dark:hover {
 .text-center {
 	text-align: center !important;
 }
+.margin{
+	margin: 150px 0;
+}
+.colorPrimary{
+	color: var(--primary);
+}
+.colorSecondary{
+	color: var(--secondary);
+}
 @media (min-width: 576px) {
 	.text-sm-left {
 		text-align: left !important;
@@ -8887,6 +8906,9 @@ a:focus {
 }
 .text-gray-100 {
 	color: #f8f9fc !important;
+}
+.boldTitle{
+	font-weight: 700 !important;
 }
 .text-gray-200 {
 	color: #eaecf4 !important;

@@ -6,7 +6,7 @@ function LastProductAdd() {
 		<div className="col-lg-6 mb-4">
 			<div className="card shadow mb-4">
 				<div className="card-header py-3">
-					<h5 className="m-0 font-weight-bold text-gray-800">
+					<h5 className="m-0 font-weight-bold colorPrimary">
 						Ultimo producto agregado
 					</h5>
 				</div>
@@ -19,7 +19,9 @@ function LastProductAdd() {
 							alt=" Star Wars - Mandalorian "
 						/>
 					</div>
-					<p>
+					<h3 className="colorPrimary">Nombre del producto</h3>
+					<h5 className="colorSecondary">Descripción</h5>
+					<p className="colorSecondary">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						Dolores, consequatur explicabo officia inventore libero
 						veritatis iure voluptate reiciendis a magnam, vitae,
@@ -28,14 +30,7 @@ function LastProductAdd() {
 						ratione aperiam voluptatum quae dolorem culpa ratione
 						aperiam voluptatum?
 					</p>
-					<a
-						className="btn btn-danger"
-						target="_blank"
-						rel="nofollow"
-						href="/"
-					>
-						Detalle de producto
-					</a>
+					<p className="colorSecondary"><strong>Precios: $ </strong>10.200</p>
 				</div>
 			</div>
 		</div>

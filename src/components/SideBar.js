@@ -4,7 +4,7 @@ import WrapperDashboard from "./WrapperDashboard"
 import WrapperProducts from "./WrapperProducts";
 import WrapperCategories from "./WrapperCategories";
 import WrapperUsers from "./WrapperUsers";
-import NotFound from "./NotFound";
+import WrapperNotFound from "./WrapperNotFound";
 import { Link, Route, Switch } from "react-router-dom";
 
 
@@ -84,7 +84,7 @@ function SideBar() {
 				<Route path="/Users">
 					<WrapperUsers />
 				</Route>
-				<Route component={NotFound} />
+				<Route component={WrapperNotFound} />
 			</Switch>
 
 		</React.Fragment>

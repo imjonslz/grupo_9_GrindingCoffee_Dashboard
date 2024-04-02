@@ -6,7 +6,7 @@ function LastUserRegister() {
 		<div className="col-lg-6 mb-4">
 			<div className="card shadow mb-4">
 				<div className="card-header py-3">
-					<h5 className="m-0 font-weight-bold text-gray-800">
+					<h5 className="m-0 font-weight-bold colorPrimary">
 						Ultimo usuario registrado
 					</h5>
 				</div>
@@ -19,23 +19,10 @@ function LastUserRegister() {
 							alt=" Star Wars - Mandalorian "
 						/>
 					</div>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Dolores, consequatur explicabo officia inventore libero
-						veritatis iure voluptate reiciendis a magnam, vitae,
-						aperiam voluptatum non corporis quae dolorem culpa
-						citationem ratione aperiam voluptatum non corporis
-						ratione aperiam voluptatum quae dolorem culpa ratione
-						aperiam voluptatum?
-					</p>
-					<a
-						className="btn btn-danger"
-						target="_blank"
-						rel="nofollow"
-						href="/"
-					>
-						Más información
-					</a>
+					<h3 className="colorPrimary">
+						Nombre y apellido
+					</h3>
+					<p className="colorSecondary"><strong>Correo Electrónico: </strong>pepito@gmail.com</p>
 				</div>
 			</div>
 		</div>
