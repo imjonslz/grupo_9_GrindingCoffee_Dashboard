@@ -47,7 +47,6 @@ function ChartUsers (){
                                 <th>Nombre</th>
                                 <th>Apellido</th>
                                 <th>Correo Electrónico</th>
-                                <th>Contraseña</th>
                                 <th>Nivel de Permisos</th>
                                 <th>Foto de Perfil</th>
                             </tr>

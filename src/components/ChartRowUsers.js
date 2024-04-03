@@ -8,7 +8,6 @@ function ChartRowUsers(props){
                     <td>{props.Name}</td>
                     <td>{props.LastName}</td>
                     <td>{props.Email}</td>
-                    <td>{props.Password}</td>
                     <td>{props.UserRoll}</td>
                     <td>{props.Avatar}</td>
                 </tr>
