@@ -4,12 +4,15 @@ import React from 'react';
 function ChartRowUsers(props){
     return (
                 <tr>
-                    <td>{props.Id}</td>
-                    <td>{props.Name}</td>
-                    <td>{props.LastName}</td>
-                    <td>{props.Email}</td>
-                    <td>{props.UserRoll}</td>
-                    <td>{props.Avatar}</td>
+                    <td>{props.id}</td>
+                    <td>{props.name}</td>
+                    <td>{props.lastName}</td>
+                    <td>{props.email}</td>
+                  {/*   <td>{props.roll.userRoll}</td> */}
+                    <td><img style={{ width: '100px', height: '100px' }}
+							src={`http://localhost:3060/img/avatars/${props.avatar}`}
+							alt={props.name}
+						/></td>
                 </tr>
             )
     }

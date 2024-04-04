@@ -1,5 +1,6 @@
 import React from 'react';
 import ChartRowProducts from './ChartRowProducts';
+import {useState, useEffect} from "react"
 
 let tableRowsDataProducts = [
     {
@@ -39,6 +40,18 @@ let tableRowsDataProducts = [
 
 
 function ChartUsers (){
+    const [Products, setProducts] = useState([]);
+
+    useEffect(()=>{
+        fetch("http://localhost:3060/api/product")
+        .then(response=> response.json())
+        .then(data=> {
+            setProducts(data.data)
+            
+        })
+        .catch(error=>console.log(error))
+      
+    }, [])
     return (
         /* <!-- DataTales Example --> */
         <div className="card shadow mb-4">
@@ -57,7 +70,7 @@ function ChartUsers (){
                         </thead>
                         <tbody>
                             {
-                            tableRowsDataProducts.map( ( row , i) => {
+                            Products.map( ( row , i) => {
                                 return <ChartRowProducts { ...row} key={i}/>
                             })
                             }

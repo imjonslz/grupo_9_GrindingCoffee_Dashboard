@@ -1,5 +1,6 @@
 import React from 'react';
 import ChartRowUsers from './ChartRowUsers';
+import {useState, useEffect} from "react"
 
 let tableRowsDataUsers = [
     {
@@ -35,6 +36,18 @@ let tableRowsDataUsers = [
 
 
 function ChartUsers (){
+    const [Users, setUsers] = useState([]);
+
+    useEffect(()=>{
+        fetch("http://localhost:3060/api/user")
+        .then(response=> response.json())
+        .then(data=> {
+            setUsers(data.data)
+            
+        })
+        .catch(error=>console.log(error))
+      
+    }, [])
     return (
         /* <!-- DataTales Example --> */
         <div className="card shadow mb-4">
@@ -47,13 +60,13 @@ function ChartUsers (){
                                 <th>Nombre</th>
                                 <th>Apellido</th>
                                 <th>Correo Electrónico</th>
-                                <th>Nivel de Permisos</th>
+                        {/*         <th>Nivel de Permisos</th> */}
                                 <th>Foto de Perfil</th>
                             </tr>
                         </thead>
                         <tbody>
                             {
-                            tableRowsDataUsers.map( ( row , i) => {
+                            Users.map( ( row , i) => {
                                 return <ChartRowUsers { ...row} key={i}/>
                             })
                             }
